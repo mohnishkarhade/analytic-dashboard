@@ -1,0 +1,9 @@
+/**
+ * Clearfix
+ */
+
+@if $use-clearfix {
+  .clearfix {
+    @include clearfix();
+  }
+}
