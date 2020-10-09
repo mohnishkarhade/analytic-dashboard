@@ -1,0 +1,31 @@
+.profile-card {
+  padding: 10px;
+
+  .profile-card__image {
+    position: relative;
+
+    img {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+    }
+
+    .profile-card__setting {
+      position: absolute;
+      bottom: 1px;
+      right: 50px;
+      background: #fff;
+      color: #eaeaea;
+      padding: 5px 9px;
+      border-radius: 50%;
+    }
+  }
+  
+  .profile-card__title {
+    .profile-card__status {
+      font-size: 8px;
+      position: relative;
+      top: -2px;
+    }
+  }
+}

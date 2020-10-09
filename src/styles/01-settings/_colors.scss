@@ -2,6 +2,9 @@
  * Colors
  */
 
+// Background colors
+$body-bg: #fbfbfd;
+
 // Default text color
 $color-text: #222 !default;
 
@@ -15,7 +18,7 @@ $color-black: #000 !default;
 $color-success: #00b300 !default;
 $color-error: #c00 !default;
 
-$colors: (
+$app-colors: (
   "default": $color-text,
   "primary": $color-primary,
   "secondary": $color-secondary,

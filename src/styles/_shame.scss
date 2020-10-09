@@ -4,3 +4,31 @@
  * This is a place for hacky, nasty code that should be replaced
  * and moved to the correct partial. Ideally, this is empty.
  */
+
+.c-dropdown {
+  .btn {
+    font-size: $font-size-sm;
+
+    &::after {
+      border-top-color: $color-light;
+      margin-left: 1.255em;
+      vertical-align: -0.055em;
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0.855em;
+      right: 1.22em;
+      border-top: 0;
+      border-right: 0.3em solid transparent;
+      border-bottom: 0.3em solid $color-light;
+      border-left: 0.3em solid transparent;
+    }
+  }
+  .btn-light {
+    background-color: transparent;
+    border-color: $color-light;
+  }
+}
