@@ -1,7 +1,19 @@
 import React from "react";
+import Header from "./header/Header";
+import Sidebar from "./sidebar/Sidebar";
 
 export default class Layout extends React.Component {
   render() {
-    return "Layout COMPONENT";
+    return (
+      <div className="grid">
+        <div className="col-desk-2 p-0">
+          <Sidebar />
+        </div>
+        <div className="col-desk-10 col-tab-10 p-0">
+          <Header />
+          <div className="content">{this.props.children}</div>
+        </div>
+      </div>
+    );
   }
 }

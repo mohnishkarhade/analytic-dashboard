@@ -1,0 +1,10 @@
+.header {
+  height: 60px;
+  border-bottom: solid 1px map-get($map: $colors, $key: "light");
+  background-color: $color-white;
+
+  .header__title {
+    line-height: 60px;
+    margin-left: 20px;
+  }
+}

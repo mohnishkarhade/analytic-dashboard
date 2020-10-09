@@ -1,0 +1,4 @@
+.sidebar {
+  height: 100vh;
+  border-right: solid 1px map-get($map: $colors, $key: "light");
+}

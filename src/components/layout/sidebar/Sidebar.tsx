@@ -1,7 +1,12 @@
 import React from "react";
+import SidebarHeader from "./SidebarHeader";
 
 export default class Sidebar extends React.Component {
   render() {
-    return "Sidebar COMPONENT";
+    return (
+      <nav className="sidebar">
+        <SidebarHeader />
+      </nav>
+    );
   }
 }
