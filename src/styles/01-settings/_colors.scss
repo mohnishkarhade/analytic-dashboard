@@ -17,6 +17,7 @@ $color-dark: #343a40 !default;
 $color-black: #000 !default;
 $color-success: #00b300 !default;
 $color-error: #c00 !default;
+$color-grey: #8a8a8a !default;
 
 $app-colors: (
   "default": $color-text,
@@ -28,6 +29,7 @@ $app-colors: (
   "black": $color-black,
   "success": $color-success,
   "error": $color-error,
+  "grey": $color-grey,
 ) !default;
 
 // Links

@@ -15,7 +15,7 @@ $grid-desktop-breakpoint: 1400px;
 // tablet grid
 $grid-tablet-columns: 12;
 $grid-tablet-sideMargin: 0px;
-$grid-tablet-gutter: 150px;
+$grid-tablet-gutter: 15px;
 $grid-tablet-breakpoint: 1020px;
 
 // mobile grid
@@ -61,6 +61,9 @@ $mob-gutter: (
   width: col-width($i, $columns);
   padding-left: $gutter/2;
   padding-right: $gutter/2;
+  @if ($i==0) {
+    display: none;
+  }
 }
 
 @mixin columns-loop($name, $columns, $gutter) {
@@ -80,7 +83,7 @@ $mob-gutter: (
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
-  max-width: $grid-desktop-breakpoint;
+  max-width: $width;
   width: $width;
 }
 

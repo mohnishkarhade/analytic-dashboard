@@ -3,6 +3,7 @@
 
   .profile-card__image {
     position: relative;
+    display: inline-block;
 
     img {
       border-radius: 50%;
@@ -12,15 +13,15 @@
 
     .profile-card__setting {
       position: absolute;
-      bottom: 1px;
-      right: 50px;
-      background: #fff;
-      color: #eaeaea;
+      bottom: 0;
+      right: 0;
+      background: $color-white;
+      color: $color-grey;
       padding: 5px 9px;
       border-radius: 50%;
     }
   }
-  
+
   .profile-card__title {
     .profile-card__status {
       font-size: 8px;

@@ -1,5 +1,6 @@
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 const bundleOutputDir = "./dist";
 
@@ -44,6 +45,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Dashboard - Analytics",
       template: "./public/index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "./public/img/**/*", to: "./dist/img" }],
     }),
   ],
 };

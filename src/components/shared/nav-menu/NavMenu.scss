@@ -1,0 +1,15 @@
+.nav-menu {
+  padding: 0 25px 15px 25px;
+
+  .nav-menu__item {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: solid 1px $color-light;
+    color: $color-dark;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+}

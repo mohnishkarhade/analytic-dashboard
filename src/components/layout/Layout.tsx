@@ -5,7 +5,7 @@ import Sidebar from "./sidebar/Sidebar";
 export default class Layout extends React.Component {
   render() {
     return (
-      <div className="grid">
+      <div className="grid-0">
         <div className="col-desk-2 col-mob-0 p-0">
           <Sidebar />
         </div>
