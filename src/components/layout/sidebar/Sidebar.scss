@@ -2,11 +2,12 @@
   height: 100vh;
   border-right: solid 1px $color-light;
   background-color: $color-white;
+  position: fixed;
+  width: inherit;
 
   .sidebar__header {
     height: 60px;
     border-bottom: solid 1px $color-light;
-    margin-bottom: 15px;
 
     .sidebar__logo {
       height: 100%;
@@ -14,4 +15,14 @@
       padding-top: 18px;
     }
   }
+
+  .sidebar__wrapper {
+    padding-top: 15px;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+  }
+}
+
+.recent-menu {
+  padding: 15px 25px;
 }

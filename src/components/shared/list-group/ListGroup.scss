@@ -1,0 +1,16 @@
+.list-group {
+  .list-group__item {
+    a {
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: $font-size-sm;
+      color: $color-dark;
+      position: relative;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
