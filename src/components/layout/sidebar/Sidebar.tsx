@@ -2,6 +2,7 @@ import React from "react";
 import ListGroup from "../../shared/list-group/ListGroup";
 import NavMenu from "../../shared/nav-menu/NavMenu";
 import ProfileCard from "../../shared/profile/ProfileCard";
+import SidebarFooter from "./SidebarFooter";
 import SidebarHeader from "./SidebarHeader";
 
 export default class Sidebar extends React.Component {
@@ -18,6 +19,7 @@ export default class Sidebar extends React.Component {
             <ListGroup />
           </section>
         </div>
+        <SidebarFooter />
       </nav>
     );
   }

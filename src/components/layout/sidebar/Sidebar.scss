@@ -6,6 +6,7 @@
   width: inherit;
 
   .sidebar__header {
+    background-color: $color-white;
     height: 60px;
     border-bottom: solid 1px $color-light;
 
@@ -18,8 +19,23 @@
 
   .sidebar__wrapper {
     padding-top: 15px;
-    height: calc(100% - 60px);
+    height: calc(100% - 130px);
     overflow-y: auto;
+  }
+
+  .sidebar__footer {
+    background-color: $color-white;
+    height: 70px;
+    border-top: solid 1px $color-light;
+    padding-top: 15px;
+    padding-left: 25px;
+
+    p {
+      color: $color-dark;
+      margin: 0;
+      padding-bottom: 5px;
+      font-size: 12px;
+    }
   }
 }
 
